@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowledgeBase>
+  <knowledgeElements>
+    <attribute>
+      <name>AREA</name>
+      <domainName>INTEGER</domainName>
+    </attribute>
+    <attribute>
+      <name>SENSITIVE_TO_COLD</name>
+      <domainName>STRING</domainName>
+    </attribute>
+    <attribute>
+      <name>LOW_PRICE</name>
+      <domainName>STRING</domainName>
+    </attribute>
+    <attribute>
+      <name>ELECTRICITY</name>
+      <domainName>STRING</domainName>
+    </attribute>
+    <attribute>
+      <name>GAS</name>
+      <domainName>STRING</domainName>
+    </attribute>
+    <attribute>
+      <name>CITY_HEATING</name>
+      <domainName>STRING</domainName>
+    </attribute>
+    <attribute>
+      <name>SYSTEM_TYPE</name>
+      <domainName>STRING</domainName>
+    </attribute>
+    <attribute>
+      <name>NON_CENTRALIZED_ELECTRIC</name>
+      <domainName>STRING</domainName>
+    </attribute>
+    <attribute>
+      <name>NON_CENTRALIZED_SOLID_FUEL</name>
+      <domainName>BOOLEAN</domainName>
+    </attribute>
+    <attribute>
+      <name>ELECTRIC_CENTRAL_HEATING</name>
+      <domainName>BOOLEAN</domainName>
+    </attribute>
+    <attribute>
+      <name>GAS_CENTRAL_HEATING</name>
+      <domainName>BOOLEAN</domainName>
+    </attribute>
+    <attribute>
+      <name>SOLID_FUEL_CENTRAL</name>
+      <domainName>BOOLEAN</domainName>
+    </attribute>
+    <attribute>
+      <name>CITY_NETWORK_CENTRAL</name>
+      <domainName>BOOLEAN</domainName>
+    </attribute>
+    <OAAc>
+      <frameName>HOUSE</frameName>
+      <attributeName>AREA</attributeName>
+      <action>ask_question</action>
+      <name>OAAc Tue Apr 25 13:12:25 CEST 2023</name>
+    </OAAc>
+    <OAAc>
+      <frameName>HOUSE</frameName>
+      <attributeName>SENSITIVE_TO_COLD</attributeName>
+      <action>ask_question</action>
+      <name>OAAc Tue Apr 25 13:12:36 CEST 2023</name>
+    </OAAc>
+    <OAAc>
+      <frameName>HOUSE</frameName>
+      <attributeName>LOW_PRICE</attributeName>
+      <action>ask_question</action>
+      <name>OAAc Tue Apr 25 13:12:48 CEST 2023</name>
+    </OAAc>
+    <OAAc>
+      <frameName>HOUSE</frameName>
+      <attributeName>ELECTRICITY</attributeName>
+      <action>ask_question</action>
+      <name>OAAc Tue Apr 25 13:12:59 CEST 2023</name>
+    </OAAc>
+    <OAAc>
+      <frameName>HOUSE</frameName>
+      <attributeName>GAS</attributeName>
+      <action>ask_question</action>
+      <name>OAAc Tue Apr 25 13:13:12 CEST 2023</name>
+    </OAAc>
+    <OAAc>
+      <frameName>HOUSE</frameName>
+      <attributeName>CITY_HEATING</attributeName>
+      <action>ask_question</action>
+      <name>OAAc Tue Apr 25 13:13:23 CEST 2023</name>
+    </OAAc>
+    <OAAc>
+      <frameName>SOLUTION</frameName>
+      <attributeName>GAS_CENTRAL_HEATING</attributeName>
+      <action>show_value</action>
+      <name>OAAc Tue Apr 25 13:40:58 CEST 2023</name>
+    </OAAc>
+    <OARV>
+      <frameName>HOUSE</frameName>
+      <attributeName>SENSITIVE_TO_COLD</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:15:39 CEST 2023</name>
+      <valueElement>
+        <value>Yes</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>SOLUTION</frameName>
+      <attributeName>SYSTEM_TYPE</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:15:54 CEST 2023</name>
+      <valueElement>
+        <value>centralized</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>HOUSE</frameName>
+      <attributeName>SENSITIVE_TO_COLD</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:17:39 CEST 2023</name>
+      <valueElement>
+        <value>No</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>SOLUTION</frameName>
+      <attributeName>SYSTEM_TYPE</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:18:06 CEST 2023</name>
+      <valueElement>
+        <value>non-centralized</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>HOUSE</frameName>
+      <attributeName>AREA</attributeName>
+      <relation>&lt;</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:18:36 CEST 2023</name>
+      <valueElement>
+        <value>50</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>HOUSE</frameName>
+      <attributeName>AREA</attributeName>
+      <relation>&gt;=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:20:04 CEST 2023</name>
+      <valueElement>
+        <value>50</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>HOUSE</frameName>
+      <attributeName>LOW_PRICE</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:32:21 CEST 2023</name>
+      <valueElement>
+        <value>No</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>HOUSE</frameName>
+      <attributeName>GAS</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:32:36 CEST 2023</name>
+      <valueElement>
+        <value>Yes</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>SOLUTION</frameName>
+      <attributeName>GAS_CENTRAL_HEATING</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:32:55 CEST 2023</name>
+      <valueElement>
+        <value>true</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>SOLUTION</frameName>
+      <attributeName>CITY_NETWORK_CENTRAL</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:33:59 CEST 2023</name>
+      <valueElement>
+        <value>true</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>HOUSE</frameName>
+      <attributeName>CITY_HEATING</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:34:28 CEST 2023</name>
+      <valueElement>
+        <value>Yes</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>HOUSE</frameName>
+      <attributeName>GAS</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:35:32 CEST 2023</name>
+      <valueElement>
+        <value>No</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>HOUSE</frameName>
+      <attributeName>ELECTRICITY</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:35:43 CEST 2023</name>
+      <valueElement>
+        <value>Yes</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>SOLUTION</frameName>
+      <attributeName>ELECTRIC_CENTRAL_HEATING</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:36:00 CEST 2023</name>
+      <valueElement>
+        <value>true</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>HOUSE</frameName>
+      <attributeName>LOW_PRICE</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:37:45 CEST 2023</name>
+      <valueElement>
+        <value>Yes</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>SOLUTION</frameName>
+      <attributeName>SOLID_FUEL_CENTRAL</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:37:58 CEST 2023</name>
+      <valueElement>
+        <value>true</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>SOLUTION</frameName>
+      <attributeName>NON_CENTRALIZED_ELECTRIC</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:38:57 CEST 2023</name>
+      <valueElement>
+        <value>true</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>HOUSE</frameName>
+      <attributeName>ELECTRICITY</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:40:00 CEST 2023</name>
+      <valueElement>
+        <value>No</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OARV>
+      <frameName>SOLUTION</frameName>
+      <attributeName>NON_CENTRALIZED_ELECTRIC</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:40:15 CEST 2023</name>
+      <valueElement>
+        <value>true</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OAAc>
+      <frameName>SOLUTION</frameName>
+      <attributeName>CITY_NETWORK_CENTRAL</attributeName>
+      <action>show_value</action>
+      <name>OAAc Tue Apr 25 13:42:55 CEST 2023</name>
+    </OAAc>
+    <OAAc>
+      <frameName>SOLUTION</frameName>
+      <attributeName>ELECTRIC_CENTRAL_HEATING</attributeName>
+      <action>show_value</action>
+      <name>OAAc Tue Apr 25 13:43:30 CEST 2023</name>
+    </OAAc>
+    <OAAc>
+      <frameName>SOLUTION</frameName>
+      <attributeName>SOLID_FUEL_CENTRAL</attributeName>
+      <action>show_value</action>
+      <name>OAAc Tue Apr 25 13:44:06 CEST 2023</name>
+    </OAAc>
+    <OAAc>
+      <frameName>SOLUTION</frameName>
+      <attributeName>NON_CENTRALIZED_ELECTRIC</attributeName>
+      <action>show_value</action>
+      <name>OAAc Tue Apr 25 13:44:50 CEST 2023</name>
+    </OAAc>
+    <OARV>
+      <frameName>SOLUTION</frameName>
+      <attributeName>NON_CENTRALIZED_SOLID_FUEL</attributeName>
+      <relation>=</relation>
+      <multiplicity>1</multiplicity>
+      <name>OARV Tue Apr 25 13:46:10 CEST 2023</name>
+      <valueElement>
+        <value>true</value>
+        <cf>1.0</cf>
+      </valueElement>
+    </OARV>
+    <OAAc>
+      <frameName>SOLUTION</frameName>
+      <attributeName>NON_CENTRALIZED_SOLID_FUEL</attributeName>
+      <action>show_value</action>
+      <name>OAAc Tue Apr 25 13:46:29 CEST 2023</name>
+    </OAAc>
+    <rule type="AND" importance="0.0">
+      <name>INITIAL_Q</name>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:12:25 CEST 2023</name>
+      </thenClause>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:12:36 CEST 2023</name>
+      </thenClause>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:12:48 CEST 2023</name>
+      </thenClause>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:12:59 CEST 2023</name>
+      </thenClause>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:13:12 CEST 2023</name>
+      </thenClause>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:13:23 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>CENTRAL_SENSITIVE</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:15:39 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:15:54 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>NON_CENTRALIZED</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:17:39 CEST 2023</name>
+      </ifClause>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:18:36 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:18:06 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>CENTRAL_LARGE_HOUSE</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:20:04 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:15:54 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>GAS_CENTRALIZED</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:15:54 CEST 2023</name>
+      </ifClause>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:32:21 CEST 2023</name>
+      </ifClause>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:32:36 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:32:55 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>CITY_NETWORK_CENTRALIZED</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:15:54 CEST 2023</name>
+      </ifClause>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:32:21 CEST 2023</name>
+      </ifClause>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:34:28 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:33:59 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>ELECTRIC_CENTRALIZED</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:15:54 CEST 2023</name>
+      </ifClause>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:32:21 CEST 2023</name>
+      </ifClause>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:35:32 CEST 2023</name>
+      </ifClause>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:35:43 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:36:00 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>SOLID_FUEL_CENTRALIZED</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:15:54 CEST 2023</name>
+      </ifClause>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:37:45 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:37:58 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>ELECTRIC_NON_CENTRALIZED</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:18:06 CEST 2023</name>
+      </ifClause>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:35:43 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:38:57 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>SOLID_FUEL_NON_CENTRALIZED</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:18:06 CEST 2023</name>
+      </ifClause>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:40:00 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:46:10 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>GAS_CENTRALIZED_S</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:32:55 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:40:58 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>CITY_NETW_CENTR_S</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:33:59 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:42:55 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>ELECTRIC_CENTR_S</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:36:00 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:43:30 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>SOLID_FUEL_CENTR_S</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:37:58 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:44:06 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>ELECTRIC_NON_CENTR_S</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:38:57 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:44:50 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <rule type="AND" importance="0.0">
+      <name>SOLID_FUEL_NON_CENTR_S</name>
+      <ifClause>
+        <type>OARV</type>
+        <name>OARV Tue Apr 25 13:46:10 CEST 2023</name>
+      </ifClause>
+      <thenClause>
+        <type>OAAc</type>
+        <name>OAAc Tue Apr 25 13:46:29 CEST 2023</name>
+      </thenClause>
+    </rule>
+    <frame>
+      <name>HOUSE</name>
+      <slot type="SINGLE" attributeName="AREA">
+        <question>What is the surface area of the hous in square meters?</question>
+      </slot>
+      <slot type="SINGLE" attributeName="SENSITIVE_TO_COLD">
+        <question>Are you sensitive to cold?</question>
+        <answer>Yes</answer>
+        <answer>No</answer>
+      </slot>
+      <slot type="SINGLE" attributeName="LOW_PRICE">
+        <question>Is it important that the price of heating be as low as possible?</question>
+        <answer>Yes</answer>
+        <answer>No</answer>
+      </slot>
+      <slot type="SINGLE" attributeName="ELECTRICITY">
+        <question>Does the house have electricity?</question>
+        <answer>Yes</answer>
+        <answer>No</answer>
+      </slot>
+      <slot type="SINGLE" attributeName="GAS">
+        <question>Is it possible to connect to LPG gas network?</question>
+        <answer>Yes</answer>
+        <answer>No</answer>
+      </slot>
+      <slot type="SINGLE" attributeName="CITY_HEATING">
+        <question>Is it possible to connect to the city's heating network?</question>
+        <answer>Yes</answer>
+        <answer>No</answer>
+      </slot>
+    </frame>
+    <frame>
+      <name>SOLUTION</name>
+      <slot type="SINGLE" attributeName="SYSTEM_TYPE">
+        <description>Describes the system heating type: centralized or non-centralized.</description>
+      </slot>
+      <slot type="SINGLE" attributeName="NON_CENTRALIZED_ELECTRIC">
+        <description>electric furnace, "Norwegian" radiators</description>
+      </slot>
+      <slot type="SINGLE" attributeName="NON_CENTRALIZED_SOLID_FUEL">
+        <description>fireplace, solid fuel stove</description>
+      </slot>
+      <slot type="SINGLE" attributeName="ELECTRIC_CENTRAL_HEATING">
+        <description>electric central furnace with radiators in all rooms</description>
+      </slot>
+      <slot type="SINGLE" attributeName="GAS_CENTRAL_HEATING">
+        <description>gas fuel central furnace with radiators in all rooms</description>
+      </slot>
+      <slot type="SINGLE" attributeName="SOLID_FUEL_CENTRAL">
+        <description>wood or coal central furnace with radiators in all rooms</description>
+      </slot>
+      <slot type="SINGLE" attributeName="CITY_NETWORK_CENTRAL">
+        <description>radiators in all rooms connected to the city heating plant</description>
+      </slot>
+    </frame>
+  </knowledgeElements>
+</knowledgeBase>
+
